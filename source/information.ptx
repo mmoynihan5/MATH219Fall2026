@@ -35,10 +35,7 @@
         <title>Class meets</title>
 
         <p>
-          Section 001: MWRF 10:30am - 11:20pm in HA 325
-        </p>
-        <p>
-          Section 003: MWRF 12:30pm - 01:20pm in HH 111
+          Section 001: MWRF 11:30am - 12:20pm in HA 419
         </p>
       </li>
 
@@ -46,8 +43,9 @@
         <title>Course Description</title>
 
         <p>
-          A thorough preparation in the skills and topics needed to study calculus.
-          After a review of polynomial and rational functions and their graphs, topics include inverse functions, exponential and logarithmic functions, and trigonometric functions.
+        A study of functions, limits, continuity, the derivative, rules of differentiation of algebraic,
+        trigonometric, exponential and logarithmic functions, applications of differentiation,
+        definite and indefinite integrals, and the Fundamental Theorem of Calculus.
         </p>
       </li>
 
@@ -55,7 +53,7 @@
         <title>Prerequisite</title>
 
         <p>
-          Completion of MATH 123 Introduction to Functions with a minimum grade of C (2.00) or better, or a satisfactory score on the mathematics placement examination.
+          Completion of MATH 180 Precalculus with a minimum grade of C (2.00) or better, or a satisfactory score on the mathematics placement examination.
         </p>
       </li>
 
@@ -74,8 +72,8 @@
         <title>Textbook</title>
 
         <p>
-          <pubtitle>Precalculus</pubtitle>
-          by OpenStax (2nd edition). <url href="https://openstax.org/details/books/precalculus-2e" visual="openstax/precalculus">Read Online</url>
+          <pubtitle>Calculus, Volume 1</pubtitle>
+          by OpenStax. <url href="https://openstax.org/details/books/calculus-volume-1" visual="openstax/calculus-volume-1">Read Online</url>
         </p>
 
         <blockquote>
