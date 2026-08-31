@@ -45,7 +45,7 @@
 
 
       <li>
-        <title>Friday, Sept 25</title>
+        <title>Friday, Oct 02</title>
         <p>
           Quiz 1
         </p>
@@ -61,7 +61,7 @@
       </li>
 
       <li>
-        <title>Friday, Oct 16</title>
+        <title>Friday, Oct 23</title>
         <p>
           Quiz 2
         </p>
@@ -69,14 +69,14 @@
 
 
       <li>
-        <title>Thursday, Oct 29</title>
+        <title>Wednesday, Nov 04</title>
         <p>
           Midterm Day One
         </p>
       </li>
 
       <li>
-        <title>Friday, Oct 30</title>
+        <title>Thursday, Nov 05</title>
         <p>
           Midterm Day Two
         </p>
@@ -92,7 +92,7 @@
       </li>
 
       <li>
-        <title>Friday, Nov 20</title>
+        <title>Monday, Nov 23</title>
         <p>
           Quiz 3
         </p>
@@ -133,20 +133,11 @@
         </p>
       </li>
 
-
-      <li>
-        <title>Wednesday, Dec 16</title>
-
-        <p>
-          Section 001 Final Exam from 11:30am to 2:30pm
-        </p>
-      </li>
-
       <li>
         <title>Thursday, Dec 17</title>
 
         <p>
-          Section 003 Final Exam from 11:30am to 2:30pm
+          Final Exam from 08:00am to 11:00am
         </p>
       </li>
     </dl>
