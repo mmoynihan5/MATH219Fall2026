@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Precalculus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<meta name="twitter:title" content="Precalculus">
+<meta property="og:title" content="Precalculus">
+<meta name="twitter:description" content="MATH 180 Fall 2026">
+<meta property="og:description" content="MATH 180 Fall 2026">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Precalculus</span> <span class="subtitle">MATH 180 Fall 2026</span></a></h1>
+<p class="byline">Matthew Moynihan</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="#frontmatter" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#information" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#Grading" class="internal"><span class="title">Grading</span></a></div>
+<ul id="ptx-toc-group-Grading" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#Grading-2" class="internal"><span class="title">Homework</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#Grading-3" class="internal"><span class="title">Standards-Based Grading (SBG)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#Grading-4" class="internal"><span class="title">Final Exam</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#Grading-5" class="internal"><span class="title">Final Grades</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#policies" class="internal"><span class="title">Course Policies</span></a></div>
+<ul id="ptx-toc-group-policies" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-3" class="internal"><span class="title">Attendance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-4" class="internal"><span class="title">Late work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-5" class="internal"><span class="title">My Expectations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-6" class="internal"><span class="title">Academic Integrity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-7" class="internal"><span class="title">Generative AI</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-8" class="internal"><span class="title">Antiracism at FSU</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-9" class="internal"><span class="title">Sexual Harassment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-10" class="internal"><span class="title">Notice of Non-Discrimination and Diversity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#policies-11" class="internal"><span class="title">Syllabus Changes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="#FAQ" class="internal"><span class="title">Frequently Asked Questions</span></a></div>
+<ul id="ptx-toc-group-FAQ" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-2" class="internal"><span class="title">What should I expect in class each day?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-3" class="internal"><span class="title">How can I get extra help learning the material?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-4" class="internal"><span class="title">What if I need academic accommodations like extra time or a reduced distraction environment for exams?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-5" class="internal"><span class="title">What if I am struggling with food or housing insecurity?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-6" class="internal"><span class="title">What if I need a letter of recommendation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="#FAQ-7" class="internal"><span class="title">What other help is available on campus?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#important-dates" class="internal"><span class="title">Important Dates</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="article" id="root-1-2">
+<section class="frontmatter" id="frontmatter"><h1 class="heading">
+<span class="title">Precalculus</span><span class="subtitle">MATH 180 Fall 2026</span>
+</h1>
+<div class="author">
+<div class="author-name">Matthew Moynihan</div>
+<div class="author-info">Mathematics<br>Framingham State University</div>
+</div>
+<div class="date">Last Updated: August 31, 2026</div>
+<div class="autopermalink" aria-hidden="true" data-description="Front Matter"><a tabindex="-1" href="#frontmatter" title="Copy heading and permalink for Front Matter" aria-label="Copy heading and permalink for Front Matter">🔗</a></div>
+</section>
+<section class="section" id="information">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Information</span>
+</h2>
+<div class="para logical" id="information-2">
+<dl class="description-list">
+<dt id="information-2-1-1">Instructor<div class="autopermalink" aria-hidden="true" data-description="Item: Instructor"><a tabindex="-1" href="#information-2-1-1" title="Copy heading and permalink for Item: Instructor" aria-label="Copy heading and permalink for Item: Instructor">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-1-2">Prof. Moynihan (he/him), HH 402D, <a class="external" href="mailto:mmoynihan5@framingham.edu" target="_blank">mmoynihan5@framingham.edu</a>. 508-626-4728<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="information-2-1-1-3">(I try to respond within 24 hours, Monday-Friday.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-2">Student Help Hours<div class="autopermalink" aria-hidden="true" data-description="Item: Student Help Hours"><a tabindex="-1" href="#information-2-1-2" title="Copy heading and permalink for Item: Student Help Hours" aria-label="Copy heading and permalink for Item: Student Help Hours">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-2-2">TBA<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="information-2-1-2-3">
+<em class="alert">Important</em>: I <em class="emphasis">want</em> to see you in student hours, and will happily make appointments with you outside of the regular hours. I’m also available by email and will respond within 24 hours, usually much sooner. There is little I enjoy more than discussing mathematics, so you are really doing me a favor by coming to see me.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-3">Class meets<div class="autopermalink" aria-hidden="true" data-description="Item: Class meets"><a tabindex="-1" href="#information-2-1-3" title="Copy heading and permalink for Item: Class meets" aria-label="Copy heading and permalink for Item: Class meets">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-3-2">Section 001: MWRF 10:30am - 11:20pm in HA 325<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="information-2-1-3-3">Section 003: MWRF 12:30pm - 01:20pm in HH 111<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-4">Course Description<div class="autopermalink" aria-hidden="true" data-description="Item: Course Description"><a tabindex="-1" href="#information-2-1-4" title="Copy heading and permalink for Item: Course Description" aria-label="Copy heading and permalink for Item: Course Description">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-4-2">A thorough preparation in the skills and topics needed to study calculus. After a review of polynomial and rational functions and their graphs, topics include inverse functions, exponential and logarithmic functions, and trigonometric functions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-5">Prerequisite<div class="autopermalink" aria-hidden="true" data-description="Item: Prerequisite"><a tabindex="-1" href="#information-2-1-5" title="Copy heading and permalink for Item: Prerequisite" aria-label="Copy heading and permalink for Item: Prerequisite">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-5-2">Completion of MATH 123 Introduction to Functions with a minimum grade of C (2.00) or better, or a satisfactory score on the mathematics placement examination.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-6">Homework<div class="autopermalink" aria-hidden="true" data-description="Item: Homework"><a tabindex="-1" href="#information-2-1-6" title="Copy heading and permalink for Item: Homework" aria-label="Copy heading and permalink for Item: Homework">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-6-2">All homework will appear in <a class="external" href="https://www.myopenmath.com/" target="_blank">MyOpenMath</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="information-2-1-7">Textbook<div class="autopermalink" aria-hidden="true" data-description="Item: Textbook"><a tabindex="-1" href="#information-2-1-7" title="Copy heading and permalink for Item: Textbook" aria-label="Copy heading and permalink for Item: Textbook">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="information-2-1-7-2">
+<span class="booktitle">Precalculus</span> by OpenStax (2nd edition). <a class="external" href="https://openstax.org/details/books/precalculus-2e" target="_blank">Read Online</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<blockquote class="blockquote" id="information-2-1-7-3">
+<div class="para" id="information-2-1-7-3-2">“Don’t just read it; fight it! Ask your own questions, look for your own examples, discover your own proofs. Is the hypothesis necessary? Is the converse true? What happens in the classical special case? What about the degenerate cases? Where does the proof use the hypothesis?”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2-1-7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<cite class="attribution">―<a class="external" href="https://en.wikipedia.org/wiki/Paul_Halmos" target="_blank">Paul Halmos</a></cite><div class="autopermalink" aria-hidden="true" data-description="Quotation: Reading Mathematics"><a tabindex="-1" href="#information-2-1-7-3" title="Copy heading and permalink for Quotation: Reading Mathematics" aria-label="Copy heading and permalink for Quotation: Reading Mathematics">🔗</a></div>
+</blockquote>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#information-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Course Information"><a tabindex="-1" href="#information" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div>
+</section>
+<section class="section" id="Grading">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Grading</span>
+</h2>
+<section class="subsection" id="Grading-2">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Homework</span>
+</h3>
+<div class="para" id="Grading-2-2">Homework is your opportunity to practice with feedback. I expect that you work on the homework frequently. Do not expect to complete assignments in a single sitting.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Grading-2-3">There are many outside resources (some good/bad and some ethnical/unethical) for completing math homework. You should work on the homework in a way that prepares you for exams. Our brains do not retain information that we do not work for.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<blockquote class="blockquote" id="Grading-2-4">
+<div class="para" id="Grading-2-4-2">“In some areas, particularly in education and in the training of young mathematicians, it will be crucial to emphasize the irreducibly human aspect of our work, and to restrict the use of AI tools quite tightly; the goal of training a mathematician is not achieved by producing correct homework.”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<cite class="attribution">―<a class="external" href="https://arxiv.org/html/2608.16753v1" target="_blank">Terence Tao</a></cite><div class="autopermalink" aria-hidden="true" data-description="Quotation: Reading Mathematics"><a tabindex="-1" href="#Grading-2-4" title="Copy heading and permalink for Quotation: Reading Mathematics" aria-label="Copy heading and permalink for Quotation: Reading Mathematics">🔗</a></div>
+</blockquote>
+<div class="para logical" id="Grading-2-5">
+<div class="para">To register for <a class="external" href="https://www.myopenmath.com/" target="_blank">MyOpenMath</a>, you will need the following.</div>
+<dl class="description-list">
+<dt id="Grading-2-5-2-1">Course Name:<div class="autopermalink" aria-hidden="true" data-description="Item: Course Name:"><a tabindex="-1" href="#Grading-2-5-2-1" title="Copy heading and permalink for Item: Course Name:" aria-label="Copy heading and permalink for Item: Course Name:">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="Grading-2-5-2-1-2">MATH 180 Precalculus - Fall 2026 - FSU<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="Grading-2-5-2-2">Course ID:<div class="autopermalink" aria-hidden="true" data-description="Item: Course ID:"><a tabindex="-1" href="#Grading-2-5-2-2" title="Copy heading and permalink for Item: Course ID:" aria-label="Copy heading and permalink for Item: Course ID:">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="Grading-2-5-2-2-2">341601<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-5-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="Grading-2-5-2-3">Enrollment Key:<div class="autopermalink" aria-hidden="true" data-description="Item: Enrollment Key:"><a tabindex="-1" href="#Grading-2-5-2-3" title="Copy heading and permalink for Item: Enrollment Key:" aria-label="Copy heading and permalink for Item: Enrollment Key:">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="Grading-2-5-2-3-2">MoynihanMATH180Fall2026<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-5-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Homework"><a tabindex="-1" href="#Grading-2" title="Copy heading and permalink for Subsection: Homework" aria-label="Copy heading and permalink for Subsection: Homework">🔗</a></div>
+</section>
+<section class="subsection" id="Grading-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standards-Based Grading (SBG)</span>
+</h3>
+<div class="para" id="Grading-3-2">This semester 50% of your grade will be based on how many of the learning objectives you complete during the quizzes and exams.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Grading-3-3">
+<em class="alert">How will my Course Objectives grade be determined?</em> Each objective will be scored on a 4-point scale and averaged like your GPA.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="r m b1 r0 l0 t0 lines">Obj. Grade</th>
+<th scope="col" class="r m b1 r0 l0 t0 lines">Points</th>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Excellent</td>
+<td class="r m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Proficient</td>
+<td class="r m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Competent</td>
+<td class="r m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Developing</td>
+<td class="r m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">No Evidence</td>
+<td class="r m b0 r0 l0 t0 lines">0</td>
+</tr>
+</table></div>
+<div class="para" id="Grading-3-5">
+<em class="alert">How many reattempts do I have for each objective?</em> You will have at most two attempts at each objective during the quizzes. You will also only be able to complete so many objectives during the in-person quizzes and exams. That will provide a limit on how many reattempts there are by the end of the semester. You will want to successfully complete some objectives on the first try to avoid falling behind. Also, the cumulative final exam is a third attempt at (most) objectives!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Grading-3-6">
+<em class="alert">What is great about this?</em> If you do not do well on the first attempt but you go back and learn the material, your better second attempt will be your grade! Knowing the material is the important thing and I do not want to penalize you for a mistake while learning.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="Grading-3-7">
+<em class="alert">Where do students go wrong with this style of grading?</em> They focus too strongly on only the reattempts and save the new material for later. This then means they get a 0 on the first attempt and are back to the old style of grading where there is no chance to improve from constructive feedback.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Standards-Based Grading (SBG)"><a tabindex="-1" href="#Grading-3" title="Copy heading and permalink for Subsection: Standards-Based Grading (SBG)" aria-label="Copy heading and permalink for Subsection: Standards-Based Grading (SBG)">🔗</a></div>
+</section>
+<section class="subsection" id="Grading-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Final Exam</span>
+</h3>
+<div class="para" id="Grading-4-2">The final exam will be cumulative. As you work through the semester, always keep this in mind. You need to grow beyond basic understand to see things at a deeper level. That is how you will retain knowledge and be able to succeed on new problems!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Final Exam"><a tabindex="-1" href="#Grading-4" title="Copy heading and permalink for Subsection: Final Exam" aria-label="Copy heading and permalink for Subsection: Final Exam">🔗</a></div>
+</section>
+<section class="subsection" id="Grading-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Final Grades</span>
+</h3>
+<div class="para" id="Grading-5-2">The following percentage weights are used for calculating your weighted course average.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="r m b1 r0 l0 t0 lines">Category</th>
+<th scope="col" class="r m b1 r0 l0 t0 lines">Weight</th>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Homework</td>
+<td class="r m b0 r0 l0 t0 lines">10%</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Course Objectives</td>
+<td class="r m b0 r0 l0 t0 lines">50%</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Midterm Exam</td>
+<td class="r m b0 r0 l0 t0 lines">15%</td>
+</tr>
+<tr>
+<td class="r m b0 r0 l0 t0 lines">Final Exam</td>
+<td class="r m b0 r0 l0 t0 lines">25%</td>
+</tr>
+</table></div>
+<div class="para" id="Grading-5-4">Final grades will be assigned based on the following scale. Students needing to take MATH 219 Calculus I are required to earn a C (2.00) or better in MATH 180 Precalculus.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#Grading-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Percentage</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Grade</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">93-100</td>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">90-93</td>
+<td class="c m b0 r0 l0 t0 lines">A-</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">87-90</td>
+<td class="c m b0 r0 l0 t0 lines">B+</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">83-87</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">80-83</td>
+<td class="c m b0 r0 l0 t0 lines">B-</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">77-80</td>
+<td class="c m b0 r0 l0 t0 lines">C+</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">73-77</td>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">70-73</td>
+<td class="c m b0 r0 l0 t0 lines">C-</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">67-70</td>
+<td class="c m b0 r0 l0 t0 lines">D+</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">63-67</td>
+<td class="c m b0 r0 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">60-63</td>
+<td class="c m b0 r0 l0 t0 lines">D-</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Below 60</td>
+<td class="c m b0 r0 l0 t0 lines">F</td>
+</tr>
+</table></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Final Grades"><a tabindex="-1" href="#Grading-5" title="Copy heading and permalink for Subsection: Final Grades" aria-label="Copy heading and permalink for Subsection: Final Grades">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Grading"><a tabindex="-1" href="#Grading" title="Copy heading and permalink for Section: Grading" aria-label="Copy heading and permalink for Section: Grading">🔗</a></div>
+</section>
+<section class="section" id="policies">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Policies</span>
+</h2>
+<section class="introduction" id="policies-2">
+<div class="para" id="policies-2-1">Make sure you familiarize yourself with the following course and university policies.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="policies-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Attendance</span>
+</h3>
+<div class="para" id="policies-3-2">Regular attendance is an expectation for all students in this course because attendance is important for learning the material. But attendance means more than simply physical presence. It also requires mental presence. Attend every class awake, on time, and ready to learn with cell phones and all other electronic devices off and out of sight.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="policies-3-3">There is no attendance grade. I expect you to take care of yourself and those around you. IF YOU ARE ILL, YOU SHOULD NOT ATTEND CLASS. Otherwise, I expect to see you in class. I do record attendance each class period to see who is present and attentive. Massachusetts classifies a student who misses more than 10% of class as "chronically absent" and for us that happens after missing only 6 class periods.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Attendance"><a tabindex="-1" href="#policies-3" title="Copy heading and permalink for Subsection: Attendance" aria-label="Copy heading and permalink for Subsection: Attendance">🔗</a></div>
+</section>
+<section class="subsection" id="policies-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Late work</span>
+</h3>
+<div class="para" id="policies-4-2">Make-up exams should be a rare occurrence reserved for illness and/or emergencies. Requests will be considered on a case-by-case basis and are not guaranteed. In particular, I will consider recent attendance and recent homework to see if you have been participating in the course.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="policies-4-3">Everyone will be given 5 late passes to extend homework due dates for full credit! However, you can only extend a due date by 4 days. This is to make sure you do not fall too far behind and to make sure we are all ready to participate in class. Also, after four days, we will almost certainly be in a new topic that deserves your time and attention.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Late work"><a tabindex="-1" href="#policies-4" title="Copy heading and permalink for Subsection: Late work" aria-label="Copy heading and permalink for Subsection: Late work">🔗</a></div>
+</section>
+<section class="subsection" id="policies-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">My Expectations</span>
+</h3>
+<div class="para logical" id="policies-5-2">
+<ul class="disc" id="policies-5-2-1">
+<li id="policies-5-2-1-1">
+<div class="para" id="policies-5-2-1-1-1">Show an attitude of respect toward everyone in the classroom. Racist, sexist, antisemitic, Islamophobic, or pornographic content is never allowed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-5-2-1-2">
+<div class="para" id="policies-5-2-1-2-1">Read all covered sections of the textbook. Reading is absolutely crucial to learning mathematics!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-5-2-1-3">
+<div class="para" id="policies-5-2-1-3-1">Complete homework assignments carefully, thoughtfully, and on time. Practice monotasking!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-5-2-1-4">
+<div class="para" id="policies-5-2-1-4-1">Prepare for assessments successfully. Make sure you test yourself before I do!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-5-2-1-5">
+<div class="para" id="policies-5-2-1-5-1">Attend help sessions and form study groups for extra help.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-5-2-1-6">
+<div class="para" id="policies-5-2-1-6-1">For each credit hour spend at least two hours working on the material outside of class. For us that means at least eight hours of work per week outside of class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-5-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: My Expectations"><a tabindex="-1" href="#policies-5" title="Copy heading and permalink for Subsection: My Expectations" aria-label="Copy heading and permalink for Subsection: My Expectations">🔗</a></div>
+</section>
+<section class="subsection" id="policies-6">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Academic Integrity</span>
+</h3>
+<div class="para logical" id="policies-6-2">
+<div class="para">Integrity is essential to academic life. Consequently, students who enroll at Framingham State University agree to maintain high standards of academic honesty and scholarly practice. They shall be responsible for familiarizing themselves with the published policies and procedures regarding academic honesty. Common infractions of the Policy on Academic Honesty in mathematics courses include, but are not limited to:</div>
+<ul class="disc" id="policies-6-2-1">
+<li id="policies-6-2-1-1">
+<div class="para" id="policies-6-2-1-1-1">Plagiarism: claiming as one’s own work the published or unpublished literal or paraphrased work of another. It should be recognized that plagiarism is not only academically dishonest but also illegal; <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-6-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-6-2-1-2">
+<div class="para" id="policies-6-2-1-2-1">Use of dishonest procedures in computer, laboratory, studio, or field work;<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-6-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-6-2-1-3">
+<div class="para" id="policies-6-2-1-3-1">Cheating on exams, tests, quizzes, assignments, and papers, including the giving or acceptance of these materials and other sources of information without the permission of the instructor(s);<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-6-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="policies-6-2-1-4">
+<div class="para" id="policies-6-2-1-4-1">Unauthorized collaboration with other individuals or entities in the preparation of course assignments;<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-6-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#policies-6-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Academic Integrity"><a tabindex="-1" href="#policies-6" title="Copy heading and permalink for Subsection: Academic Integrity" aria-label="Copy heading and permalink for Subsection: Academic Integrity">🔗</a></div>
+</section>
+<section class="subsection" id="policies-7">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Generative AI</span>
+</h3>
+<div class="para" id="policies-7-2"> Use of Generative AI or Agentic AI is strictly prohibited because this emerging technology cannot do mathematics. It can only mimic mathematics and lead learners astray. The idea of optimized frictionless learning is a myth. I expect that at times you will get stuck. That is the goal! Quickly turning to GenAI will not prepare you for exams.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Generative AI"><a tabindex="-1" href="#policies-7" title="Copy heading and permalink for Subsection: Generative AI" aria-label="Copy heading and permalink for Subsection: Generative AI">🔗</a></div>
+</section>
+<section class="subsection" id="policies-8">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Antiracism at FSU</span>
+</h3>
+<div class="para" id="policies-8-2">At Framingham State University, faculty, staff, and students work together to sustain a learning, working, and living community free from hate, discrimination, harassment, and intolerance. We recognize the damaging effects of systemic racism - including policies, structures, and historic practices - on the experience and success of communities of color. Coming from different backgrounds and different levels of privilege, we can all affirm and engage in antiracist work.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="policies-8-3">Diversity of voices, and of minds, strengthens our ability to solve problems and to ask and answer questions about the world we share. As your instructor, I commit to upholding community values of inclusion, civility, accessibility, and mutual respect. I expect this class to commit to creating a community that affirms and welcomes all persons from diverse backgrounds and experiences, and supports the realization of everyone’s potential.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Antiracism at FSU"><a tabindex="-1" href="#policies-8" title="Copy heading and permalink for Subsection: Antiracism at FSU" aria-label="Copy heading and permalink for Subsection: Antiracism at FSU">🔗</a></div>
+</section>
+<section class="subsection" id="policies-9">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sexual Harassment</span>
+</h3>
+<div class="para" id="policies-9-2">Framingham State University is committed to maintaining a safe and healthy learning, living and working environment that is free from all forms of sexual violence, sexual harassment, gender-based harassment, domestic violence, dating violence, stalking and retaliation. If you or someone you know has experienced any form of sexual or gender-based misconduct, we urge you to visit the <a class="external" href="https://www.framingham.edu/sexual-harassment-assault-prevention-education" target="_blank">SHAPE</a> website for information regarding on-campus and community resources, University policy, contact information for the Title IX Coordinators, confidential and non-confidential reporting options, victim rights, and more.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Sexual Harassment"><a tabindex="-1" href="#policies-9" title="Copy heading and permalink for Subsection: Sexual Harassment" aria-label="Copy heading and permalink for Subsection: Sexual Harassment">🔗</a></div>
+</section>
+<section class="subsection" id="policies-10">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Notice of Non-Discrimination and Diversity</span>
+</h3>
+<div class="para" id="policies-10-2">Framingham State University is committed to a policy of non-discrimination, equal opportunity, diversity, and affirmative action. The University is dedicated to providing educational, working, and living environments that value the diverse backgrounds of all people. Furthermore, the Massachusetts Civil Rights Act (``MCRA,’’ M.G.L. c. 12, §§ 11H, 11I, 11J) protects the rights of all residents of and visitors to Massachusetts to be free from bias-motivated threats, intimidation, and coercion that interfere with their civil rights. The MCRA protects the right to attend school, live peacefully, and enjoy other basic rights.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Notice of Non-Discrimination and Diversity"><a tabindex="-1" href="#policies-10" title="Copy heading and permalink for Subsection: Notice of Non-Discrimination and Diversity" aria-label="Copy heading and permalink for Subsection: Notice of Non-Discrimination and Diversity">🔗</a></div>
+</section>
+<section class="subsection" id="policies-11">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Syllabus Changes</span>
+</h3>
+<div class="para" id="policies-11-2">The instructor reserves the right to make changes to this syllabus. Any changes will be announced to the class in a timely manner.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#policies-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Syllabus Changes"><a tabindex="-1" href="#policies-11" title="Copy heading and permalink for Subsection: Syllabus Changes" aria-label="Copy heading and permalink for Subsection: Syllabus Changes">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Policies"><a tabindex="-1" href="#policies" title="Copy heading and permalink for Section: Course Policies" aria-label="Copy heading and permalink for Section: Course Policies">🔗</a></div>
+</section>
+<section class="section" id="FAQ">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Frequently Asked Questions</span>
+</h2>
+<section class="subsection" id="FAQ-2">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What should I expect in class each day?</span>
+</h3>
+<div class="para" id="FAQ-2-2">While the math we study will change almost daily, learning mathematics works best with a few key guidelines for class. I expect you to have a notebook and writing utensil every day. Some days I will have handouts to work through but many days I will not.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="FAQ-2-3">I like to start class with a quick overview of what we are going to learn that day and how it relates to what we have been studying. Chronic lateness robs you of this context and makes learning harder. It also disrupts other students.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="FAQ-2-4">It is your job not to distract yourself or others. Notes should be taken on paper or on a tablet with a stylus. No other laptop use is permitted during class. You should not be working on anything while learning new material, even our own homework!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: What should I expect in class each day?"><a tabindex="-1" href="#FAQ-2" title="Copy heading and permalink for Subsection: What should I expect in class each day?" aria-label="Copy heading and permalink for Subsection: What should I expect in class each day?">🔗</a></div>
+</section>
+<section class="subsection" id="FAQ-3">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How can I get extra help learning the material?</span>
+</h3>
+<div class="para" id="FAQ-3-2">I encourage you to come to Student Help Hours whenever you have questions. Make sure to see me as soon as possible if you feel that you are falling behind.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="FAQ-3-3">
+<a class="external" href="https://framingham4.sharepoint.com/:u:/r/sites/FSU-Center-CASA/SitePages/Academic%20Support.aspx?csf=1&amp;web=1&amp;e=HHugeS" target="_blank">CASA</a> also provides math tutoring. Follow the link for their tutoring schedule.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: How can I get extra help learning the material?"><a tabindex="-1" href="#FAQ-3" title="Copy heading and permalink for Subsection: How can I get extra help learning the material?" aria-label="Copy heading and permalink for Subsection: How can I get extra help learning the material?">🔗</a></div>
+</section>
+<section class="subsection" id="FAQ-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What if I need academic accommodations like extra time or a reduced distraction environment for exams?</span>
+</h3>
+<div class="para" id="FAQ-4-2">Any student eligible for and requesting academic accommodation due to a disability is requested to provide Documentation Confirmation from Disability/Access Services within the first two weeks of the beginning of class. <a class="external" href="https://www.framingham.edu/academics/academic-success/center-academic-success-and-achievement" target="_blank">Disability/Access Services</a> is located in the Center for Academic Success and Achievement (CASA). Please email <a class="external" href="mailto:disabilityservices@framingham.edu" target="_blank">disabilityservices@framingham.edu</a> if you have questions or if you need to schedule an appointment.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: What if I need academic accommodations like extra time or a reduced distraction environment for exams?"><a tabindex="-1" href="#FAQ-4" title="Copy heading and permalink for Subsection: What if I need academic accommodations like extra time or a reduced distraction environment for exams?" aria-label="Copy heading and permalink for Subsection: What if I need academic accommodations like extra time or a reduced distraction environment for exams?">🔗</a></div>
+</section>
+<section class="subsection" id="FAQ-5">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What if I am struggling with food or housing insecurity?</span>
+</h3>
+<div class="para" id="FAQ-5-2">Visit the <a class="external" href="https://www.framingham.edu/campus-life/student-support-resources/rams-resource-center" target="_blank">Rams Resource Center</a> in West Hall 105 for non-perishable food items and toiletries.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="FAQ-5-3">To support students who are facing temporary or chronic homelessness and/or difficulty affording food, we have established a Single Point of Contact (SPOC) staff person to assist students with navigating campus and local resources. If you or someone you know needs help, please contact Olivia Fenty at (508) 626-4767, <a class="external" href="mailto:Ofenty@framingham.edu" target="_blank">ofenty@framingham.edu</a>, or stop by the Dean of Students Office. The Dean of Students Office is located on the 5th floor of the McCarthy Center in Suite 504.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: What if I am struggling with food or housing insecurity?"><a tabindex="-1" href="#FAQ-5" title="Copy heading and permalink for Subsection: What if I am struggling with food or housing insecurity?" aria-label="Copy heading and permalink for Subsection: What if I am struggling with food or housing insecurity?">🔗</a></div>
+</section>
+<section class="subsection" id="FAQ-6">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What if I need a letter of recommendation?</span>
+</h3>
+<div class="para" id="FAQ-6-2">I routinely write letters of recommendation for students. It’s part of my job! If you need a letter of recommendation please email me and I will let you know whether or not I can write one for you. Note: I usually need at least two weeks to be able to write a quality letter.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: What if I need a letter of recommendation?"><a tabindex="-1" href="#FAQ-6" title="Copy heading and permalink for Subsection: What if I need a letter of recommendation?" aria-label="Copy heading and permalink for Subsection: What if I need a letter of recommendation?">🔗</a></div>
+</section>
+<section class="subsection" id="FAQ-7">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What other help is available on campus?</span>
+</h3>
+<div class="para logical" id="FAQ-7-2">
+<ul class="disc" id="FAQ-7-2-1">
+<li id="FAQ-7-2-1-1">
+<div class="para" id="FAQ-7-2-1-1-1">
+<a class="external" href="https://www.framingham.edu/campus-life/counseling-health-and-wellness/health-center" target="_blank">Health Center</a> (Foster Hall)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#FAQ-7-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="FAQ-7-2-1-2">
+<div class="para" id="FAQ-7-2-1-2-1">
+<a class="external" href="https://www.framingham.edu/campus-life/counseling-health-and-wellness/counseling-center" target="_blank">Counseling Center</a> (Foster Hall)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#FAQ-7-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="FAQ-7-2-1-3">
+<div class="para" id="FAQ-7-2-1-3-1">
+<a class="external" href="https://www.framingham.edu/campus-life/dean-students-office" target="_blank">Dean of Students</a> (Office in McCarthy 504)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-7-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#FAQ-7-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="FAQ-7-2-1-4">
+<div class="para" id="FAQ-7-2-1-4-1">
+<a class="external" href="https://www.framingham.edu/campus-life/student-support-resources" target="_blank">Student Support Resources</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-7-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#FAQ-7-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#FAQ-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: What other help is available on campus?"><a tabindex="-1" href="#FAQ-7" title="Copy heading and permalink for Subsection: What other help is available on campus?" aria-label="Copy heading and permalink for Subsection: What other help is available on campus?">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Frequently Asked Questions"><a tabindex="-1" href="#FAQ" title="Copy heading and permalink for Section: Frequently Asked Questions" aria-label="Copy heading and permalink for Section: Frequently Asked Questions">🔗</a></div>
+</section>
+<section class="section" id="important-dates">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Important Dates</span>
+</h2>
+<div class="para" id="important-dates-2">The following are the most significant university and course dates this term. For smaller course assignment due dates, check the <a class="external" href="https://framingham.instructure.com/" target="_blank">Canvas</a> and <a class="external" href="https://www.myopenmath.com/" target="_blank">MyOpenMath</a> calendars regularly.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="important-dates-3">
+<dl class="description-list wide">
+<dt id="important-dates-3-1-1">Wednesday, Sept 02<div class="autopermalink" aria-hidden="true" data-description="Item: Wednesday, Sept 02"><a tabindex="-1" href="#important-dates-3-1-1" title="Copy heading and permalink for Item: Wednesday, Sept 02" aria-label="Copy heading and permalink for Item: Wednesday, Sept 02">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-1-2">First Day of Class<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-2">Friday, Sept 04<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Sept 04"><a tabindex="-1" href="#important-dates-3-1-2" title="Copy heading and permalink for Item: Friday, Sept 04" aria-label="Copy heading and permalink for Item: Friday, Sept 04">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-2-2">No Class<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-3">Monday, Sept 07<div class="autopermalink" aria-hidden="true" data-description="Item: Monday, Sept 07"><a tabindex="-1" href="#important-dates-3-1-3" title="Copy heading and permalink for Item: Monday, Sept 07" aria-label="Copy heading and permalink for Item: Monday, Sept 07">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-3-2">No Classes (Labor Day)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-4">Thursday, Sept 10<div class="autopermalink" aria-hidden="true" data-description="Item: Thursday, Sept 10"><a tabindex="-1" href="#important-dates-3-1-4" title="Copy heading and permalink for Item: Thursday, Sept 10" aria-label="Copy heading and permalink for Item: Thursday, Sept 10">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-4-2">Last Day to Add/Drop a Course<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-5">Friday, Sept 25<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Sept 25"><a tabindex="-1" href="#important-dates-3-1-5" title="Copy heading and permalink for Item: Friday, Sept 25" aria-label="Copy heading and permalink for Item: Friday, Sept 25">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-5-2">Quiz 1<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-6">Monday, Oct 12<div class="autopermalink" aria-hidden="true" data-description="Item: Monday, Oct 12"><a tabindex="-1" href="#important-dates-3-1-6" title="Copy heading and permalink for Item: Monday, Oct 12" aria-label="Copy heading and permalink for Item: Monday, Oct 12">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-6-2">No Classes (Columbus Day / Indigenous Peoples Day)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-7">Friday, Oct 16<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Oct 16"><a tabindex="-1" href="#important-dates-3-1-7" title="Copy heading and permalink for Item: Friday, Oct 16" aria-label="Copy heading and permalink for Item: Friday, Oct 16">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-7-2">Quiz 2<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-8">Thursday, Oct 29<div class="autopermalink" aria-hidden="true" data-description="Item: Thursday, Oct 29"><a tabindex="-1" href="#important-dates-3-1-8" title="Copy heading and permalink for Item: Thursday, Oct 29" aria-label="Copy heading and permalink for Item: Thursday, Oct 29">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-8-2">Midterm Day One<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-9">Friday, Oct 30<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Oct 30"><a tabindex="-1" href="#important-dates-3-1-9" title="Copy heading and permalink for Item: Friday, Oct 30" aria-label="Copy heading and permalink for Item: Friday, Oct 30">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-9-2">Midterm Day Two<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-10">Wednesday, Nov 11<div class="autopermalink" aria-hidden="true" data-description="Item: Wednesday, Nov 11"><a tabindex="-1" href="#important-dates-3-1-10" title="Copy heading and permalink for Item: Wednesday, Nov 11" aria-label="Copy heading and permalink for Item: Wednesday, Nov 11">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-10-2">No Classes (Veterans Day)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-11">Friday, Nov 20<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Nov 20"><a tabindex="-1" href="#important-dates-3-1-11" title="Copy heading and permalink for Item: Friday, Nov 20" aria-label="Copy heading and permalink for Item: Friday, Nov 20">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-11-2">Quiz 3<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-12">Wednesday, Nov 25<div class="autopermalink" aria-hidden="true" data-description="Item: Wednesday, Nov 25"><a tabindex="-1" href="#important-dates-3-1-12" title="Copy heading and permalink for Item: Wednesday, Nov 25" aria-label="Copy heading and permalink for Item: Wednesday, Nov 25">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-12-2">Last Day to Withdraw with a W<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="important-dates-3-1-12-3">Last Day to Request Credit/No Credit<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-12-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-13">Nov 26-Nov 27<div class="autopermalink" aria-hidden="true" data-description="Item: Nov 26-Nov 27"><a tabindex="-1" href="#important-dates-3-1-13" title="Copy heading and permalink for Item: Nov 26-Nov 27" aria-label="Copy heading and permalink for Item: Nov 26-Nov 27">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-13-2">No Classes (Thanksgiving Recess)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-14">Friday, Dec 11<div class="autopermalink" aria-hidden="true" data-description="Item: Friday, Dec 11"><a tabindex="-1" href="#important-dates-3-1-14" title="Copy heading and permalink for Item: Friday, Dec 11" aria-label="Copy heading and permalink for Item: Friday, Dec 11">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-14-2">Quiz 4<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-15">Monday, Dec 14<div class="autopermalink" aria-hidden="true" data-description="Item: Monday, Dec 14"><a tabindex="-1" href="#important-dates-3-1-15" title="Copy heading and permalink for Item: Monday, Dec 14" aria-label="Copy heading and permalink for Item: Monday, Dec 14">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-15-2">Last Day of Class<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-16">Wednesday, Dec 16<div class="autopermalink" aria-hidden="true" data-description="Item: Wednesday, Dec 16"><a tabindex="-1" href="#important-dates-3-1-16" title="Copy heading and permalink for Item: Wednesday, Dec 16" aria-label="Copy heading and permalink for Item: Wednesday, Dec 16">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-16-2">Section 001 Final Exam from 11:30am to 2:30pm<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="important-dates-3-1-17">Thursday, Dec 17<div class="autopermalink" aria-hidden="true" data-description="Item: Thursday, Dec 17"><a tabindex="-1" href="#important-dates-3-1-17" title="Copy heading and permalink for Item: Thursday, Dec 17" aria-label="Copy heading and permalink for Item: Thursday, Dec 17">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="important-dates-3-1-17-2">Section 003 Final Exam from 11:30am to 2:30pm<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3-1-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#important-dates-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Section: Important Dates"><a tabindex="-1" href="#important-dates" title="Copy heading and permalink for Section: Important Dates" aria-label="Copy heading and permalink for Section: Important Dates">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Article: Precalculus"><a tabindex="-1" href="#root-1-2" title="Copy heading and permalink for Article: Precalculus" aria-label="Copy heading and permalink for Article: Precalculus">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
